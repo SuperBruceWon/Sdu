@@ -1,0 +1,12 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: bw-sidecar
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+sidecar:
+  port: 8060
+  health-uri: http://lcoalhost:8060/health.json
